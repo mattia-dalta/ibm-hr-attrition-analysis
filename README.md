@@ -8,31 +8,31 @@ The purpose of this project is to understand what variables influence employee a
 
 ## Repository Contents
 
-- HR_IBM.ipynb: Jupyter Notebook containing the analysis and data cleaning steps.
-- HR_cleaned_for_tableau.csv: Final cleaned dataset ready for import into Tableau.
-- README.md: This documentation file.
+- `HR_IBM.ipynb`: Jupyter Notebook containing the analysis and data cleaning steps.
+- `HR_cleaned_for_tableau.csv`: Final cleaned dataset ready for import into Tableau.
+- `README.md`: This documentation file.
 
 ## Steps Performed
 
 1. Inspected the structure and data types of the dataset.
 2. Verified the presence of missing values and found none.
 3. Dropped the following non-informative or redundant columns:
-   - EmployeeNumber: only an ID.
-   - StandardHours, EmployeeCount, Over18: contain constant values.
-   - DailyRate, HourlyRate, MonthlyRate: less relevant due to redundancy with MonthlyIncome.
+   - `StandardHours`, `EmployeeCount`, `Over18`: contain constant values.
+   - `DailyRate`, `HourlyRate`, `MonthlyRate`: considered less relevant due to redundancy with `MonthlyIncome`.
 4. Renamed several variables for clarity and better integration with Tableau.
 5. Exported the final version of the dataset in CSV format for use in Tableau.
 
 ## Dataset Information
 
 The dataset includes demographic, satisfaction, performance, and compensation information for employees. Key variables include:
-- Attrition (whether the employee left the company)
-- MonthlyIncome
-- JobRole
-- WorkLifeBalance
-- EnvironmentSatisfaction
-- Education
-- PerformanceRating
+- `EmployeeNumber` (employee unique identifier)
+- `Attrition` (whether the employee left the company)
+- `MonthlyIncome`
+- `JobRole`
+- `WorkLifeBalance`
+- `EnvironmentSatisfaction`
+- `Education`
+- `PerformanceRating`
 
 All numeric categorical variables have been kept in numeric form but are interpreted using a predefined scale (e.g. 1 = Low, 4 = Very High).
 
